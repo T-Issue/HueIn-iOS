@@ -1,0 +1,1445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630B448F2C6B62E300441DA3 /* HueInTimerActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B448B2C6B62CE00441DA3 /* HueInTimerActivityLiveActivity.swift */; };
+		630B44902C6B62E600441DA3 /* HueInTriggerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B448D2C6B62D300441DA3 /* HueInTriggerBtn.swift */; };
+		630B44932C6B62FE00441DA3 /* AppIntentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44922C6B62FE00441DA3 /* AppIntentManager.swift */; };
+		630B44952C6B630500441DA3 /* StopMediIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44942C6B630500441DA3 /* StopMediIntent.swift */; };
+		630B44962C6B630800441DA3 /* StopMediIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44942C6B630500441DA3 /* StopMediIntent.swift */; };
+		630B44972C6B630B00441DA3 /* AppIntentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44922C6B62FE00441DA3 /* AppIntentManager.swift */; };
+		630B44982C6B638A00441DA3 /* TimerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44892C6B62C300441DA3 /* TimerText.swift */; };
+		630B449F2C6B63B200441DA3 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630B449E2C6B63B200441DA3 /* Intents.framework */; };
+		630B44A22C6B63B200441DA3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44A12C6B63B200441DA3 /* IntentHandler.swift */; };
+		630B44A62C6B63B200441DA3 /* LiveIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 630B449D2C6B63B200441DA3 /* LiveIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		630B44AA2C6B63EA00441DA3 /* StopMediIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44942C6B630500441DA3 /* StopMediIntent.swift */; };
+		630B44AB2C6B63EC00441DA3 /* AppIntentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44922C6B62FE00441DA3 /* AppIntentManager.swift */; };
+		630B44AF2C6B647E00441DA3 /* PlayingGraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44AC2C6B647E00441DA3 /* PlayingGraphicView.swift */; };
+		630B44B02C6B647E00441DA3 /* PlayingLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44AD2C6B647E00441DA3 /* PlayingLoadingView.swift */; };
+		630B44B12C6B647E00441DA3 /* PlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B44AE2C6B647E00441DA3 /* PlayingView.swift */; };
+		6327F7F12C5B1A73007F64F2 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F7F02C5B1A73007F64F2 /* Labels.swift */; };
+		6327F7F32C5B2108007F64F2 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F7F22C5B2108007F64F2 /* ListView.swift */; };
+		6327F7F52C5B2280007F64F2 /* NavigationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F7F42C5B2280007F64F2 /* NavigationEnvironment.swift */; };
+		6327F7F72C5B23A2007F64F2 /* HueStorageEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F7F62C5B23A2007F64F2 /* HueStorageEnvironment.swift */; };
+		6327F7F92C5B2473007F64F2 /* MediItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F7F82C5B2473007F64F2 /* MediItem.swift */; };
+		6327F7FB2C5B3026007F64F2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F7FA2C5B3026007F64F2 /* SettingView.swift */; };
+		6327F8032C5B586E007F64F2 /* BeforePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F8022C5B586E007F64F2 /* BeforePlayView.swift */; };
+		6327F80A2C5B5CB4007F64F2 /* BeHappy.json in Resources */ = {isa = PBXBuildFile; fileRef = 6327F8042C5B5CB4007F64F2 /* BeHappy.json */; };
+		6327F80B2C5B5CB4007F64F2 /* Concentrate.json in Resources */ = {isa = PBXBuildFile; fileRef = 6327F8052C5B5CB4007F64F2 /* Concentrate.json */; };
+		6327F80C2C5B5CB4007F64F2 /* Confidence.json in Resources */ = {isa = PBXBuildFile; fileRef = 6327F8062C5B5CB4007F64F2 /* Confidence.json */; };
+		6327F80D2C5B5CB4007F64F2 /* Destress.json in Resources */ = {isa = PBXBuildFile; fileRef = 6327F8072C5B5CB4007F64F2 /* Destress.json */; };
+		6333C7322C60DDD200B758DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6333C7312C60DDD200B758DD /* WidgetKit.framework */; };
+		6333C7342C60DDD200B758DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6333C7332C60DDD200B758DD /* SwiftUI.framework */; };
+		6333C7372C60DDD200B758DD /* HueInTimerActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333C7362C60DDD200B758DD /* HueInTimerActivityBundle.swift */; };
+		6333C73D2C60DDD300B758DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6333C73C2C60DDD300B758DD /* Assets.xcassets */; };
+		6333C7412C60DDD300B758DD /* HueInTimerActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6333C72F2C60DDD100B758DD /* HueInTimerActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6333C7472C60DF0900B758DD /* MediAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333C7462C60DF0900B758DD /* MediAttributes.swift */; };
+		6333C7482C60DFB300B758DD /* MediAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333C7462C60DF0900B758DD /* MediAttributes.swift */; };
+		6333C74C2C60E22D00B758DD /* MediItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327F7F82C5B2473007F64F2 /* MediItem.swift */; };
+		6333C76D2C60E48000B758DD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C75A2C60E48000B758DD /* Pretendard-Black.otf */; };
+		6333C76E2C60E48000B758DD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C75B2C60E48000B758DD /* Pretendard-Bold.otf */; };
+		6333C76F2C60E48000B758DD /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C75C2C60E48000B758DD /* Pretendard-ExtraBold.otf */; };
+		6333C7702C60E48000B758DD /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C75D2C60E48000B758DD /* Pretendard-ExtraLight.otf */; };
+		6333C7712C60E48000B758DD /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C75E2C60E48000B758DD /* Pretendard-Light.otf */; };
+		6333C7722C60E48000B758DD /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C75F2C60E48000B758DD /* Pretendard-Medium.otf */; };
+		6333C7732C60E48000B758DD /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C7602C60E48000B758DD /* Pretendard-Regular.otf */; };
+		6333C7742C60E48000B758DD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C7612C60E48000B758DD /* Pretendard-SemiBold.otf */; };
+		6333C7752C60E48000B758DD /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6333C7622C60E48000B758DD /* Pretendard-Thin.otf */; };
+		6333C7792C60E8BD00B758DD /* LiveActivityEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333C7782C60E8BD00B758DD /* LiveActivityEnvironment.swift */; };
+		6333C77B2C60E8E000B758DD /* LiveActivityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333C77A2C60E8E000B758DD /* LiveActivityClient.swift */; };
+		63377A412C61C3ED00F7C841 /* feelFree.json in Resources */ = {isa = PBXBuildFile; fileRef = 63377A402C61C3ED00F7C841 /* feelFree.json */; };
+		63456E942C5C6FE2004948D5 /* SettingHealthSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456E932C5C6FE2004948D5 /* SettingHealthSelectionView.swift */; };
+		63456E962C5C75F7004948D5 /* SettingMediItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456E952C5C75F7004948D5 /* SettingMediItemView.swift */; };
+		63456E982C5CD625004948D5 /* SettingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456E972C5CD625004948D5 /* SettingListView.swift */; };
+		63456E9A2C5CD645004948D5 /* SettingNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456E992C5CD645004948D5 /* SettingNavigationView.swift */; };
+		63456E9E2C5CD69D004948D5 /* SpatialAudioSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456E9D2C5CD69D004948D5 /* SpatialAudioSettingView.swift */; };
+		63456EA02C5CEFD4004948D5 /* SpatialEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456E9F2C5CEFD3004948D5 /* SpatialEnvironment.swift */; };
+		63456EA32C5CF21A004948D5 /* SpatialEnvironmentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456EA22C5CF21A004948D5 /* SpatialEnvironmentImpl.swift */; };
+		63456EBB2C5D0DD1004948D5 /* CoreGraphicsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456EBA2C5D0DD1004948D5 /* CoreGraphicsExtension.swift */; };
+		63456EBD2C5D1C94004948D5 /* ModeAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456EBC2C5D1C94004948D5 /* ModeAudioView.swift */; };
+		63456EC02C5D1CC8004948D5 /* SpatialAudioVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456EBF2C5D1CC8004948D5 /* SpatialAudioVM.swift */; };
+		63456EC32C5D1CE8004948D5 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63456EC22C5D1CE8004948D5 /* InfoView.swift */; };
+		6356CBF82C5FC22E00F0F434 /* ConnectAppleHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CBF72C5FC22E00F0F434 /* ConnectAppleHealth.swift */; };
+		6356CBFC2C5FE9F900F0F434 /* SettingPlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CBFB2C5FE9F900F0F434 /* SettingPlusView.swift */; };
+		6356CBFE2C5FF05600F0F434 /* StoreKitImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CBFD2C5FF05600F0F434 /* StoreKitImpl.swift */; };
+		6356CC002C6052FD00F0F434 /* StoreEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356CBFF2C6052FD00F0F434 /* StoreEnvironment.swift */; };
+		63BC421D2C63022D006B452F /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC421C2C63022D006B452F /* ListCardView.swift */; };
+		63CC16462C6213ED0073C68D /* (null) in Sources */ = {isa = PBXBuildFile; };
+		63CC16482C6215FB0073C68D /* HealthUnAvailabeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC16472C6215FB0073C68D /* HealthUnAvailabeView.swift */; };
+		63CC378F2C60F62C00AE51AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D0CA802C5A6D090074E687 /* Assets.xcassets */; };
+		63CC37912C60F70B00AE51AC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CC37902C60F70B00AE51AC /* Launch Screen.storyboard */; };
+		63CC37932C60FC4B00AE51AC /* Splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 63CC37922C60FC4B00AE51AC /* Splash.json */; };
+		63CC37952C61060E00AE51AC /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC37942C61060E00AE51AC /* SwiftExtensions.swift */; };
+		63CC37972C61120A00AE51AC /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63CC37962C61120A00AE51AC /* Montserrat-SemiBold.ttf */; };
+		63CC37992C6114F900AE51AC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC37982C6114F900AE51AC /* ColorExtension.swift */; };
+		63CC379C2C612F2B00AE51AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63CC379B2C612F2B00AE51AC /* GoogleService-Info.plist */; };
+		63CC379F2C612F8200AE51AC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 63CC379E2C612F8200AE51AC /* FirebaseAnalytics */; };
+		63CC37A12C612F8200AE51AC /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 63CC37A02C612F8200AE51AC /* FirebaseAnalyticsOnDeviceConversion */; };
+		63CC37A32C612F8200AE51AC /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 63CC37A22C612F8200AE51AC /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		63CC37A52C612F8200AE51AC /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 63CC37A42C612F8200AE51AC /* FirebaseCrashlytics */; };
+		63CC37A82C61348200AE51AC /* Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 63CC37A72C61348200AE51AC /* Loading.json */; };
+		63CC37AA2C61354700AE51AC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC37A92C61354700AE51AC /* LoadingView.swift */; };
+		63D0CA7D2C5A6D080074E687 /* HueInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0CA7C2C5A6D080074E687 /* HueInApp.swift */; };
+		63D0CA812C5A6D090074E687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D0CA802C5A6D090074E687 /* Assets.xcassets */; };
+		63D0CA842C5A6D090074E687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D0CA832C5A6D090074E687 /* Preview Assets.xcassets */; };
+		63D0CA902C5A6F860074E687 /* GreemSwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 63D0CA8F2C5A6F860074E687 /* GreemSwiftPackage */; };
+		63D0CA932C5A6FBA0074E687 /* Health_Remind in Frameworks */ = {isa = PBXBuildFile; productRef = 63D0CA922C5A6FBA0074E687 /* Health_Remind */; };
+		63D0CA962C5A6FD90074E687 /* HueDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 63D0CA952C5A6FD90074E687 /* HueDesignSystem */; };
+		63D0CA982C5A6FD90074E687 /* HueViews in Frameworks */ = {isa = PBXBuildFile; productRef = 63D0CA972C5A6FD90074E687 /* HueViews */; };
+		63D0CA9B2C5A6FF80074E687 /* Health_Remind in Frameworks */ = {isa = PBXBuildFile; productRef = 63D0CA9A2C5A6FF80074E687 /* Health_Remind */; };
+		63D0CAA02C5A72D70074E687 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0CA9F2C5A72D70074E687 /* OnboardingView.swift */; };
+		63D0CAA22C5A72EE0074E687 /* OnboardHelpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0CAA12C5A72EE0074E687 /* OnboardHelpInfo.swift */; };
+		63D0CAA42C5A73090074E687 /* OnboardShareCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0CAA32C5A73090074E687 /* OnboardShareCar.swift */; };
+		63D0CAA62C5A76970074E687 /* OnboardBinaural.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0CAA52C5A76970074E687 /* OnboardBinaural.swift */; };
+		63D0CAA82C5A7A6B0074E687 /* OnboardSettingSpatial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0CAA72C5A7A6B0074E687 /* OnboardSettingSpatial.swift */; };
+		63D0CAAB2C5AAD3D0074E687 /* HueDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 63D0CAAA2C5AAD3D0074E687 /* HueDesignSystem */; };
+		63D0CAAD2C5AAD3D0074E687 /* HueViews in Frameworks */ = {isa = PBXBuildFile; productRef = 63D0CAAC2C5AAD3D0074E687 /* HueViews */; };
+		63E6AAD82C69C94400ED2A2A /* concentrate_R.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AACC2C69C94300ED2A2A /* concentrate_R.mp3 */; };
+		63E6AAD92C69C94400ED2A2A /* confidence_L.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AACD2C69C94300ED2A2A /* confidence_L.mp3 */; };
+		63E6AADA2C69C94400ED2A2A /* destress_R.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AACE2C69C94300ED2A2A /* destress_R.mp3 */; };
+		63E6AADB2C69C94400ED2A2A /* feelfree_L.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AACF2C69C94400ED2A2A /* feelfree_L.mp3 */; };
+		63E6AADC2C69C94400ED2A2A /* setting_L.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD02C69C94400ED2A2A /* setting_L.mp3 */; };
+		63E6AADD2C69C94400ED2A2A /* destress_L.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD12C69C94400ED2A2A /* destress_L.mp3 */; };
+		63E6AADE2C69C94400ED2A2A /* feelfree_R.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD22C69C94400ED2A2A /* feelfree_R.mp3 */; };
+		63E6AADF2C69C94400ED2A2A /* concentrate_L.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD32C69C94400ED2A2A /* concentrate_L.mp3 */; };
+		63E6AAE02C69C94400ED2A2A /* confidence_R.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD42C69C94400ED2A2A /* confidence_R.mp3 */; };
+		63E6AAE12C69C94400ED2A2A /* behappy_L.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD52C69C94400ED2A2A /* behappy_L.mp3 */; };
+		63E6AAE22C69C94400ED2A2A /* setting_R.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD62C69C94400ED2A2A /* setting_R.mp3 */; };
+		63E6AAE32C69C94400ED2A2A /* behappy_R.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E6AAD72C69C94400ED2A2A /* behappy_R.mp3 */; };
+		63F4171E2C61AE83000EDCF7 /* Breath.json in Resources */ = {isa = PBXBuildFile; fileRef = 63F4171D2C61AE83000EDCF7 /* Breath.json */; };
+		63F6FCD82C5B6E4A00AEB656 /* BeforePlayBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCD72C5B6E4A00AEB656 /* BeforePlayBackground.swift */; };
+		63F6FCDA2C5B6E6B00AEB656 /* BeforePlayExplain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCD92C5B6E6B00AEB656 /* BeforePlayExplain.swift */; };
+		63F6FCDC2C5B6E8C00AEB656 /* BeforePlayPlayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCDB2C5B6E8C00AEB656 /* BeforePlayPlayItem.swift */; };
+		63F6FCE22C5BAC7600AEB656 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 63F6FCE12C5BAC7600AEB656 /* Lottie */; };
+		63F6FCE52C5BAC9800AEB656 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCE42C5BAC9800AEB656 /* LottieView.swift */; };
+		63F6FCE82C5BAEF400AEB656 /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCE72C5BAEF400AEB656 /* FinishView.swift */; };
+		63F6FCEB2C5BBF9700AEB656 /* FinishMediAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCEA2C5BBF9700AEB656 /* FinishMediAnalysisView.swift */; };
+		63F6FCED2C5BBFBA00AEB656 /* FinishExplainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCEC2C5BBFBA00AEB656 /* FinishExplainView.swift */; };
+		63F6FCEF2C5BC02000AEB656 /* FinishHealthRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCEE2C5BC02000AEB656 /* FinishHealthRecordView.swift */; };
+		63F6FCF12C5BDD4000AEB656 /* RecordChardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCF02C5BDD4000AEB656 /* RecordChardView.swift */; };
+		63F6FCF32C5BDDD300AEB656 /* MediChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCF22C5BDDD300AEB656 /* MediChartItem.swift */; };
+		63F6FCF62C5BE0E200AEB656 /* MediChartUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6FCF52C5BE0E200AEB656 /* MediChartUseCases.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630B44A42C6B63B200441DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63D0CA712C5A6D080074E687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630B449C2C6B63B200441DA3;
+			remoteInfo = LiveIntents;
+		};
+		6333C73F2C60DDD300B758DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63D0CA712C5A6D080074E687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6333C72E2C60DDD100B758DD;
+			remoteInfo = HueInTimerActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6333C7422C60DDD300B758DD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				630B44A62C6B63B200441DA3 /* LiveIntents.appex in Embed Foundation Extensions */,
+				6333C7412C60DDD300B758DD /* HueInTimerActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		630B44892C6B62C300441DA3 /* TimerText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerText.swift; sourceTree = "<group>"; };
+		630B448B2C6B62CE00441DA3 /* HueInTimerActivityLiveActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueInTimerActivityLiveActivity.swift; sourceTree = "<group>"; };
+		630B448D2C6B62D300441DA3 /* HueInTriggerBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueInTriggerBtn.swift; sourceTree = "<group>"; };
+		630B44922C6B62FE00441DA3 /* AppIntentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIntentManager.swift; sourceTree = "<group>"; };
+		630B44942C6B630500441DA3 /* StopMediIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopMediIntent.swift; sourceTree = "<group>"; };
+		630B449D2C6B63B200441DA3 /* LiveIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		630B449E2C6B63B200441DA3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		630B44A12C6B63B200441DA3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		630B44A32C6B63B200441DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630B44AC2C6B647E00441DA3 /* PlayingGraphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingGraphicView.swift; sourceTree = "<group>"; };
+		630B44AD2C6B647E00441DA3 /* PlayingLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingLoadingView.swift; sourceTree = "<group>"; };
+		630B44AE2C6B647E00441DA3 /* PlayingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingView.swift; sourceTree = "<group>"; };
+		6327F7F02C5B1A73007F64F2 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		6327F7F22C5B2108007F64F2 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		6327F7F42C5B2280007F64F2 /* NavigationEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationEnvironment.swift; sourceTree = "<group>"; };
+		6327F7F62C5B23A2007F64F2 /* HueStorageEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueStorageEnvironment.swift; sourceTree = "<group>"; };
+		6327F7F82C5B2473007F64F2 /* MediItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediItem.swift; sourceTree = "<group>"; };
+		6327F7FA2C5B3026007F64F2 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		6327F7FD2C5B4FA4007F64F2 /* HueIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HueIn.entitlements; sourceTree = "<group>"; };
+		6327F8022C5B586E007F64F2 /* BeforePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforePlayView.swift; sourceTree = "<group>"; };
+		6327F8042C5B5CB4007F64F2 /* BeHappy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeHappy.json; sourceTree = "<group>"; };
+		6327F8052C5B5CB4007F64F2 /* Concentrate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Concentrate.json; sourceTree = "<group>"; };
+		6327F8062C5B5CB4007F64F2 /* Confidence.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confidence.json; sourceTree = "<group>"; };
+		6327F8072C5B5CB4007F64F2 /* Destress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Destress.json; sourceTree = "<group>"; };
+		6333C72F2C60DDD100B758DD /* HueInTimerActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HueInTimerActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6333C7312C60DDD200B758DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6333C7332C60DDD200B758DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6333C7362C60DDD200B758DD /* HueInTimerActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueInTimerActivityBundle.swift; sourceTree = "<group>"; };
+		6333C73C2C60DDD300B758DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6333C73E2C60DDD300B758DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6333C7462C60DF0900B758DD /* MediAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediAttributes.swift; sourceTree = "<group>"; };
+		6333C75A2C60E48000B758DD /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		6333C75B2C60E48000B758DD /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		6333C75C2C60E48000B758DD /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		6333C75D2C60E48000B758DD /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		6333C75E2C60E48000B758DD /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		6333C75F2C60E48000B758DD /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		6333C7602C60E48000B758DD /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		6333C7612C60E48000B758DD /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		6333C7622C60E48000B758DD /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		6333C7782C60E8BD00B758DD /* LiveActivityEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityEnvironment.swift; sourceTree = "<group>"; };
+		6333C77A2C60E8E000B758DD /* LiveActivityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityClient.swift; sourceTree = "<group>"; };
+		63377A402C61C3ED00F7C841 /* feelFree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feelFree.json; sourceTree = "<group>"; };
+		63456E932C5C6FE2004948D5 /* SettingHealthSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHealthSelectionView.swift; sourceTree = "<group>"; };
+		63456E952C5C75F7004948D5 /* SettingMediItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMediItemView.swift; sourceTree = "<group>"; };
+		63456E972C5CD625004948D5 /* SettingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListView.swift; sourceTree = "<group>"; };
+		63456E992C5CD645004948D5 /* SettingNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNavigationView.swift; sourceTree = "<group>"; };
+		63456E9D2C5CD69D004948D5 /* SpatialAudioSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialAudioSettingView.swift; sourceTree = "<group>"; };
+		63456E9F2C5CEFD3004948D5 /* SpatialEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialEnvironment.swift; sourceTree = "<group>"; };
+		63456EA22C5CF21A004948D5 /* SpatialEnvironmentImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialEnvironmentImpl.swift; sourceTree = "<group>"; };
+		63456EBA2C5D0DD1004948D5 /* CoreGraphicsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtension.swift; sourceTree = "<group>"; };
+		63456EBC2C5D1C94004948D5 /* ModeAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeAudioView.swift; sourceTree = "<group>"; };
+		63456EBF2C5D1CC8004948D5 /* SpatialAudioVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialAudioVM.swift; sourceTree = "<group>"; };
+		63456EC22C5D1CE8004948D5 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		63456EC42C5E1929004948D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6356CBF72C5FC22E00F0F434 /* ConnectAppleHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAppleHealth.swift; sourceTree = "<group>"; };
+		6356CBFA2C5FE7F800F0F434 /* TestHue.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestHue.storekit; sourceTree = "<group>"; };
+		6356CBFB2C5FE9F900F0F434 /* SettingPlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPlusView.swift; sourceTree = "<group>"; };
+		6356CBFD2C5FF05600F0F434 /* StoreKitImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitImpl.swift; sourceTree = "<group>"; };
+		6356CBFF2C6052FD00F0F434 /* StoreEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEnvironment.swift; sourceTree = "<group>"; };
+		63BC421C2C63022D006B452F /* ListCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
+		63CC16472C6215FB0073C68D /* HealthUnAvailabeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUnAvailabeView.swift; sourceTree = "<group>"; };
+		63CC37902C60F70B00AE51AC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		63CC37922C60FC4B00AE51AC /* Splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Splash.json; sourceTree = "<group>"; };
+		63CC37942C61060E00AE51AC /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		63CC37962C61120A00AE51AC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		63CC37982C6114F900AE51AC /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		63CC379A2C6120A300AE51AC /* HueIn.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = HueIn.storekit; sourceTree = "<group>"; };
+		63CC379B2C612F2B00AE51AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63CC37A72C61348200AE51AC /* Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading.json; sourceTree = "<group>"; };
+		63CC37A92C61354700AE51AC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		63D0CA792C5A6D080074E687 /* HueIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D0CA7C2C5A6D080074E687 /* HueInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueInApp.swift; sourceTree = "<group>"; };
+		63D0CA802C5A6D090074E687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63D0CA832C5A6D090074E687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63D0CA9F2C5A72D70074E687 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		63D0CAA12C5A72EE0074E687 /* OnboardHelpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardHelpInfo.swift; sourceTree = "<group>"; };
+		63D0CAA32C5A73090074E687 /* OnboardShareCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardShareCar.swift; sourceTree = "<group>"; };
+		63D0CAA52C5A76970074E687 /* OnboardBinaural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardBinaural.swift; sourceTree = "<group>"; };
+		63D0CAA72C5A7A6B0074E687 /* OnboardSettingSpatial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardSettingSpatial.swift; sourceTree = "<group>"; };
+		63E6AACC2C69C94300ED2A2A /* concentrate_R.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = concentrate_R.mp3; sourceTree = "<group>"; };
+		63E6AACD2C69C94300ED2A2A /* confidence_L.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = confidence_L.mp3; sourceTree = "<group>"; };
+		63E6AACE2C69C94300ED2A2A /* destress_R.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = destress_R.mp3; sourceTree = "<group>"; };
+		63E6AACF2C69C94400ED2A2A /* feelfree_L.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feelfree_L.mp3; sourceTree = "<group>"; };
+		63E6AAD02C69C94400ED2A2A /* setting_L.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = setting_L.mp3; sourceTree = "<group>"; };
+		63E6AAD12C69C94400ED2A2A /* destress_L.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = destress_L.mp3; sourceTree = "<group>"; };
+		63E6AAD22C69C94400ED2A2A /* feelfree_R.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feelfree_R.mp3; sourceTree = "<group>"; };
+		63E6AAD32C69C94400ED2A2A /* concentrate_L.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = concentrate_L.mp3; sourceTree = "<group>"; };
+		63E6AAD42C69C94400ED2A2A /* confidence_R.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = confidence_R.mp3; sourceTree = "<group>"; };
+		63E6AAD52C69C94400ED2A2A /* behappy_L.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = behappy_L.mp3; sourceTree = "<group>"; };
+		63E6AAD62C69C94400ED2A2A /* setting_R.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = setting_R.mp3; sourceTree = "<group>"; };
+		63E6AAD72C69C94400ED2A2A /* behappy_R.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = behappy_R.mp3; sourceTree = "<group>"; };
+		63F4171D2C61AE83000EDCF7 /* Breath.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Breath.json; sourceTree = "<group>"; };
+		63F6FCD72C5B6E4A00AEB656 /* BeforePlayBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforePlayBackground.swift; sourceTree = "<group>"; };
+		63F6FCD92C5B6E6B00AEB656 /* BeforePlayExplain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforePlayExplain.swift; sourceTree = "<group>"; };
+		63F6FCDB2C5B6E8C00AEB656 /* BeforePlayPlayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforePlayPlayItem.swift; sourceTree = "<group>"; };
+		63F6FCE42C5BAC9800AEB656 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		63F6FCE72C5BAEF400AEB656 /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
+		63F6FCEA2C5BBF9700AEB656 /* FinishMediAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishMediAnalysisView.swift; sourceTree = "<group>"; };
+		63F6FCEC2C5BBFBA00AEB656 /* FinishExplainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishExplainView.swift; sourceTree = "<group>"; };
+		63F6FCEE2C5BC02000AEB656 /* FinishHealthRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishHealthRecordView.swift; sourceTree = "<group>"; };
+		63F6FCF02C5BDD4000AEB656 /* RecordChardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordChardView.swift; sourceTree = "<group>"; };
+		63F6FCF22C5BDDD300AEB656 /* MediChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediChartItem.swift; sourceTree = "<group>"; };
+		63F6FCF52C5BE0E200AEB656 /* MediChartUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediChartUseCases.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630B449A2C6B63B200441DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630B449F2C6B63B200441DA3 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6333C72C2C60DDD100B758DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6333C7342C60DDD200B758DD /* SwiftUI.framework in Frameworks */,
+				6333C7322C60DDD200B758DD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D0CA762C5A6D080074E687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D0CAAB2C5AAD3D0074E687 /* HueDesignSystem in Frameworks */,
+				63D0CA9B2C5A6FF80074E687 /* Health_Remind in Frameworks */,
+				63D0CAAD2C5AAD3D0074E687 /* HueViews in Frameworks */,
+				63D0CA982C5A6FD90074E687 /* HueViews in Frameworks */,
+				63CC37A32C612F8200AE51AC /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				63D0CA962C5A6FD90074E687 /* HueDesignSystem in Frameworks */,
+				63D0CA902C5A6F860074E687 /* GreemSwiftPackage in Frameworks */,
+				63D0CA932C5A6FBA0074E687 /* Health_Remind in Frameworks */,
+				63CC37A12C612F8200AE51AC /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				63CC37A52C612F8200AE51AC /* FirebaseCrashlytics in Frameworks */,
+				63F6FCE22C5BAC7600AEB656 /* Lottie in Frameworks */,
+				63CC379F2C612F8200AE51AC /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630B44912C6B62F300441DA3 /* AppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				630B44942C6B630500441DA3 /* StopMediIntent.swift */,
+				630B44922C6B62FE00441DA3 /* AppIntentManager.swift */,
+			);
+			path = AppIntents;
+			sourceTree = "<group>";
+		};
+		630B44A02C6B63B200441DA3 /* LiveIntents */ = {
+			isa = PBXGroup;
+			children = (
+				630B44A12C6B63B200441DA3 /* IntentHandler.swift */,
+				630B44A32C6B63B200441DA3 /* Info.plist */,
+			);
+			path = LiveIntents;
+			sourceTree = "<group>";
+		};
+		6327F7FC2C5B3060007F64F2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				63456E9C2C5CD66E004948D5 /* ConnectAppleHealth */,
+				63456E9B2C5CD65F004948D5 /* SpatialAudioSetting */,
+				63456E922C5C6FCE004948D5 /* Components */,
+				6327F7FA2C5B3026007F64F2 /* SettingView.swift */,
+				6356CBFB2C5FE9F900F0F434 /* SettingPlusView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6327F8012C5B5860007F64F2 /* MeditationViews */ = {
+			isa = PBXGroup;
+			children = (
+				63F6FCE62C5BAEDA00AEB656 /* FinishView */,
+				63F6FCDD2C5BAC0F00AEB656 /* PlayingView */,
+				63F6FCD42C5B6E1400AEB656 /* BeforePlayView */,
+				63F6FCF02C5BDD4000AEB656 /* RecordChardView.swift */,
+			);
+			path = MeditationViews;
+			sourceTree = "<group>";
+		};
+		6327F8092C5B5CB4007F64F2 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				63377A402C61C3ED00F7C841 /* feelFree.json */,
+				63CC37A72C61348200AE51AC /* Loading.json */,
+				63CC37922C60FC4B00AE51AC /* Splash.json */,
+				6327F8042C5B5CB4007F64F2 /* BeHappy.json */,
+				63F4171D2C61AE83000EDCF7 /* Breath.json */,
+				6327F8052C5B5CB4007F64F2 /* Concentrate.json */,
+				6327F8062C5B5CB4007F64F2 /* Confidence.json */,
+				6327F8072C5B5CB4007F64F2 /* Destress.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		6333C7302C60DDD200B758DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6333C7312C60DDD200B758DD /* WidgetKit.framework */,
+				6333C7332C60DDD200B758DD /* SwiftUI.framework */,
+				630B449E2C6B63B200441DA3 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6333C7352C60DDD200B758DD /* HueInTimerActivity */ = {
+			isa = PBXGroup;
+			children = (
+				6333C7362C60DDD200B758DD /* HueInTimerActivityBundle.swift */,
+				630B448B2C6B62CE00441DA3 /* HueInTimerActivityLiveActivity.swift */,
+				630B448D2C6B62D300441DA3 /* HueInTriggerBtn.swift */,
+				6333C7632C60E48000B758DD /* static */,
+				630B44892C6B62C300441DA3 /* TimerText.swift */,
+				6333C73C2C60DDD300B758DD /* Assets.xcassets */,
+				6333C73E2C60DDD300B758DD /* Info.plist */,
+			);
+			path = HueInTimerActivity;
+			sourceTree = "<group>";
+		};
+		6333C7632C60E48000B758DD /* static */ = {
+			isa = PBXGroup;
+			children = (
+				63CC37962C61120A00AE51AC /* Montserrat-SemiBold.ttf */,
+				6333C75A2C60E48000B758DD /* Pretendard-Black.otf */,
+				6333C75B2C60E48000B758DD /* Pretendard-Bold.otf */,
+				6333C75C2C60E48000B758DD /* Pretendard-ExtraBold.otf */,
+				6333C75D2C60E48000B758DD /* Pretendard-ExtraLight.otf */,
+				6333C75E2C60E48000B758DD /* Pretendard-Light.otf */,
+				6333C75F2C60E48000B758DD /* Pretendard-Medium.otf */,
+				6333C7602C60E48000B758DD /* Pretendard-Regular.otf */,
+				6333C7612C60E48000B758DD /* Pretendard-SemiBold.otf */,
+				6333C7622C60E48000B758DD /* Pretendard-Thin.otf */,
+				63CC37982C6114F900AE51AC /* ColorExtension.swift */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		6333C7762C60E87700B758DD /* StoreKitEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				6356CBFD2C5FF05600F0F434 /* StoreKitImpl.swift */,
+				6356CBFF2C6052FD00F0F434 /* StoreEnvironment.swift */,
+			);
+			path = StoreKitEnvironment;
+			sourceTree = "<group>";
+		};
+		6333C7772C60E88900B758DD /* LiveActirivtEnrironment */ = {
+			isa = PBXGroup;
+			children = (
+				6333C7782C60E8BD00B758DD /* LiveActivityEnvironment.swift */,
+				6333C77A2C60E8E000B758DD /* LiveActivityClient.swift */,
+			);
+			path = LiveActirivtEnrironment;
+			sourceTree = "<group>";
+		};
+		63456E922C5C6FCE004948D5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63456E932C5C6FE2004948D5 /* SettingHealthSelectionView.swift */,
+				63456E952C5C75F7004948D5 /* SettingMediItemView.swift */,
+				63456E972C5CD625004948D5 /* SettingListView.swift */,
+				63456E992C5CD645004948D5 /* SettingNavigationView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		63456E9B2C5CD65F004948D5 /* SpatialAudioSetting */ = {
+			isa = PBXGroup;
+			children = (
+				63456EC12C5D1CE0004948D5 /* Components */,
+				63456EBF2C5D1CC8004948D5 /* SpatialAudioVM.swift */,
+				63456E9D2C5CD69D004948D5 /* SpatialAudioSettingView.swift */,
+			);
+			path = SpatialAudioSetting;
+			sourceTree = "<group>";
+		};
+		63456E9C2C5CD66E004948D5 /* ConnectAppleHealth */ = {
+			isa = PBXGroup;
+			children = (
+				6356CBF72C5FC22E00F0F434 /* ConnectAppleHealth.swift */,
+				63CC16472C6215FB0073C68D /* HealthUnAvailabeView.swift */,
+			);
+			path = ConnectAppleHealth;
+			sourceTree = "<group>";
+		};
+		63456EA12C5CF20C004948D5 /* SpatialEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				63456E9F2C5CEFD3004948D5 /* SpatialEnvironment.swift */,
+				63456EA22C5CF21A004948D5 /* SpatialEnvironmentImpl.swift */,
+			);
+			path = SpatialEnvironment;
+			sourceTree = "<group>";
+		};
+		63456EA42C5CF38B004948D5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				63E6AAD52C69C94400ED2A2A /* behappy_L.mp3 */,
+				63E6AAD72C69C94400ED2A2A /* behappy_R.mp3 */,
+				63E6AAD32C69C94400ED2A2A /* concentrate_L.mp3 */,
+				63E6AACC2C69C94300ED2A2A /* concentrate_R.mp3 */,
+				63E6AACD2C69C94300ED2A2A /* confidence_L.mp3 */,
+				63E6AAD42C69C94400ED2A2A /* confidence_R.mp3 */,
+				63E6AAD12C69C94400ED2A2A /* destress_L.mp3 */,
+				63E6AACE2C69C94300ED2A2A /* destress_R.mp3 */,
+				63E6AACF2C69C94400ED2A2A /* feelfree_L.mp3 */,
+				63E6AAD22C69C94400ED2A2A /* feelfree_R.mp3 */,
+				63E6AAD02C69C94400ED2A2A /* setting_L.mp3 */,
+				63E6AAD62C69C94400ED2A2A /* setting_R.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		63456EB92C5D0DC6004948D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63456EBA2C5D0DD1004948D5 /* CoreGraphicsExtension.swift */,
+				63CC37942C61060E00AE51AC /* SwiftExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63456EC12C5D1CE0004948D5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63456EBC2C5D1C94004948D5 /* ModeAudioView.swift */,
+				63456EC22C5D1CE8004948D5 /* InfoView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		63CC16442C6213DC0073C68D /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				63BC421C2C63022D006B452F /* ListCardView.swift */,
+				6327F7F22C5B2108007F64F2 /* ListView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		63D0CA702C5A6D080074E687 = {
+			isa = PBXGroup;
+			children = (
+				630B44912C6B62F300441DA3 /* AppIntents */,
+				63D0CA7B2C5A6D080074E687 /* HueIn */,
+				6333C7352C60DDD200B758DD /* HueInTimerActivity */,
+				630B44A02C6B63B200441DA3 /* LiveIntents */,
+				6333C7302C60DDD200B758DD /* Frameworks */,
+				63D0CA7A2C5A6D080074E687 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63D0CA7A2C5A6D080074E687 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63D0CA792C5A6D080074E687 /* HueIn.app */,
+				6333C72F2C60DDD100B758DD /* HueInTimerActivityExtension.appex */,
+				630B449D2C6B63B200441DA3 /* LiveIntents.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63D0CA7B2C5A6D080074E687 /* HueIn */ = {
+			isa = PBXGroup;
+			children = (
+				63CC379B2C612F2B00AE51AC /* GoogleService-Info.plist */,
+				63456EC42C5E1929004948D5 /* Info.plist */,
+				63456EB92C5D0DC6004948D5 /* Helpers */,
+				6327F7FD2C5B4FA4007F64F2 /* HueIn.entitlements */,
+				63D0CA7C2C5A6D080074E687 /* HueInApp.swift */,
+				63D0CA8D2C5A6D970074E687 /* Model */,
+				63F6FCF42C5BE0D000AEB656 /* UseCases */,
+				63D0CA8C2C5A6D900074E687 /* View */,
+				63D0CA8B2C5A6D800074E687 /* Environments */,
+				63D0CA8A2C5A6D7A0074E687 /* Resources */,
+				63D0CA802C5A6D090074E687 /* Assets.xcassets */,
+				63D0CA822C5A6D090074E687 /* Preview Content */,
+				6356CBFA2C5FE7F800F0F434 /* TestHue.storekit */,
+				63CC37902C60F70B00AE51AC /* Launch Screen.storyboard */,
+				63CC379A2C6120A300AE51AC /* HueIn.storekit */,
+			);
+			path = HueIn;
+			sourceTree = "<group>";
+		};
+		63D0CA822C5A6D090074E687 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63D0CA832C5A6D090074E687 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63D0CA8A2C5A6D7A0074E687 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63456EA42C5CF38B004948D5 /* Sounds */,
+				6327F8092C5B5CB4007F64F2 /* Animation */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63D0CA8B2C5A6D800074E687 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				6333C7772C60E88900B758DD /* LiveActirivtEnrironment */,
+				6333C7762C60E87700B758DD /* StoreKitEnvironment */,
+				63456EA12C5CF20C004948D5 /* SpatialEnvironment */,
+				6327F7F42C5B2280007F64F2 /* NavigationEnvironment.swift */,
+				6327F7F62C5B23A2007F64F2 /* HueStorageEnvironment.swift */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		63D0CA8C2C5A6D900074E687 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63CC16442C6213DC0073C68D /* ListView */,
+				63F6FCE32C5BAC8A00AEB656 /* Components */,
+				6327F8012C5B5860007F64F2 /* MeditationViews */,
+				6327F7FC2C5B3060007F64F2 /* Settings */,
+				63D0CA9E2C5A72C40074E687 /* OnboardView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63D0CA8D2C5A6D970074E687 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6327F7F02C5B1A73007F64F2 /* Labels.swift */,
+				6327F7F82C5B2473007F64F2 /* MediItem.swift */,
+				63F6FCF22C5BDDD300AEB656 /* MediChartItem.swift */,
+				6333C7462C60DF0900B758DD /* MediAttributes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63D0CA9E2C5A72C40074E687 /* OnboardView */ = {
+			isa = PBXGroup;
+			children = (
+				63D0CA9F2C5A72D70074E687 /* OnboardingView.swift */,
+				63D0CAA12C5A72EE0074E687 /* OnboardHelpInfo.swift */,
+				63D0CAA32C5A73090074E687 /* OnboardShareCar.swift */,
+				63D0CAA52C5A76970074E687 /* OnboardBinaural.swift */,
+				63D0CAA72C5A7A6B0074E687 /* OnboardSettingSpatial.swift */,
+			);
+			path = OnboardView;
+			sourceTree = "<group>";
+		};
+		63F6FCD42C5B6E1400AEB656 /* BeforePlayView */ = {
+			isa = PBXGroup;
+			children = (
+				6327F8022C5B586E007F64F2 /* BeforePlayView.swift */,
+				63F6FCD52C5B6E2500AEB656 /* Components */,
+			);
+			path = BeforePlayView;
+			sourceTree = "<group>";
+		};
+		63F6FCD52C5B6E2500AEB656 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63F6FCD72C5B6E4A00AEB656 /* BeforePlayBackground.swift */,
+				63F6FCD92C5B6E6B00AEB656 /* BeforePlayExplain.swift */,
+				63F6FCDB2C5B6E8C00AEB656 /* BeforePlayPlayItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		63F6FCDD2C5BAC0F00AEB656 /* PlayingView */ = {
+			isa = PBXGroup;
+			children = (
+				630B44AC2C6B647E00441DA3 /* PlayingGraphicView.swift */,
+				630B44AD2C6B647E00441DA3 /* PlayingLoadingView.swift */,
+				630B44AE2C6B647E00441DA3 /* PlayingView.swift */,
+			);
+			path = PlayingView;
+			sourceTree = "<group>";
+		};
+		63F6FCE32C5BAC8A00AEB656 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63F6FCE42C5BAC9800AEB656 /* LottieView.swift */,
+				63CC37A92C61354700AE51AC /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		63F6FCE62C5BAEDA00AEB656 /* FinishView */ = {
+			isa = PBXGroup;
+			children = (
+				63F6FCE92C5BBDB800AEB656 /* Components */,
+				63F6FCE72C5BAEF400AEB656 /* FinishView.swift */,
+			);
+			path = FinishView;
+			sourceTree = "<group>";
+		};
+		63F6FCE92C5BBDB800AEB656 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63F6FCEA2C5BBF9700AEB656 /* FinishMediAnalysisView.swift */,
+				63F6FCEC2C5BBFBA00AEB656 /* FinishExplainView.swift */,
+				63F6FCEE2C5BC02000AEB656 /* FinishHealthRecordView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		63F6FCF42C5BE0D000AEB656 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				63F6FCF52C5BE0E200AEB656 /* MediChartUseCases.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630B449C2C6B63B200441DA3 /* LiveIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630B44A72C6B63B200441DA3 /* Build configuration list for PBXNativeTarget "LiveIntents" */;
+			buildPhases = (
+				630B44992C6B63B200441DA3 /* Sources */,
+				630B449A2C6B63B200441DA3 /* Frameworks */,
+				630B449B2C6B63B200441DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveIntents;
+			productName = LiveIntents;
+			productReference = 630B449D2C6B63B200441DA3 /* LiveIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6333C72E2C60DDD100B758DD /* HueInTimerActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6333C7452C60DDD300B758DD /* Build configuration list for PBXNativeTarget "HueInTimerActivityExtension" */;
+			buildPhases = (
+				6333C72B2C60DDD100B758DD /* Sources */,
+				6333C72C2C60DDD100B758DD /* Frameworks */,
+				6333C72D2C60DDD100B758DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HueInTimerActivityExtension;
+			productName = HueInTimerActivityExtension;
+			productReference = 6333C72F2C60DDD100B758DD /* HueInTimerActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		63D0CA782C5A6D080074E687 /* HueIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63D0CA872C5A6D090074E687 /* Build configuration list for PBXNativeTarget "HueIn" */;
+			buildPhases = (
+				63D0CA752C5A6D080074E687 /* Sources */,
+				63D0CA762C5A6D080074E687 /* Frameworks */,
+				63D0CA772C5A6D080074E687 /* Resources */,
+				6333C7422C60DDD300B758DD /* Embed Foundation Extensions */,
+				63CC37A62C61329200AE51AC /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6333C7402C60DDD300B758DD /* PBXTargetDependency */,
+				630B44A52C6B63B200441DA3 /* PBXTargetDependency */,
+			);
+			name = HueIn;
+			packageProductDependencies = (
+				63D0CA8F2C5A6F860074E687 /* GreemSwiftPackage */,
+				63D0CA922C5A6FBA0074E687 /* Health_Remind */,
+				63D0CA952C5A6FD90074E687 /* HueDesignSystem */,
+				63D0CA972C5A6FD90074E687 /* HueViews */,
+				63D0CA9A2C5A6FF80074E687 /* Health_Remind */,
+				63D0CAAA2C5AAD3D0074E687 /* HueDesignSystem */,
+				63D0CAAC2C5AAD3D0074E687 /* HueViews */,
+				63F6FCE12C5BAC7600AEB656 /* Lottie */,
+				63CC379E2C612F8200AE51AC /* FirebaseAnalytics */,
+				63CC37A02C612F8200AE51AC /* FirebaseAnalyticsOnDeviceConversion */,
+				63CC37A22C612F8200AE51AC /* FirebaseAnalyticsWithoutAdIdSupport */,
+				63CC37A42C612F8200AE51AC /* FirebaseCrashlytics */,
+			);
+			productName = HueIn;
+			productReference = 63D0CA792C5A6D080074E687 /* HueIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63D0CA712C5A6D080074E687 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					630B449C2C6B63B200441DA3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					6333C72E2C60DDD100B758DD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					63D0CA782C5A6D080074E687 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 63D0CA742C5A6D080074E687 /* Build configuration list for PBXProject "HueIn" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63D0CA702C5A6D080074E687;
+			packageReferences = (
+				63D0CA8E2C5A6F860074E687 /* XCRemoteSwiftPackageReference "GreemSwiftPackage" */,
+				63D0CA992C5A6FF80074E687 /* XCLocalSwiftPackageReference "../Health_Remind" */,
+				63D0CAA92C5AAD3D0074E687 /* XCLocalSwiftPackageReference "../HueDesign" */,
+				63F6FCE02C5BAC7600AEB656 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				63CC379D2C612F8200AE51AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 63D0CA7A2C5A6D080074E687 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63D0CA782C5A6D080074E687 /* HueIn */,
+				6333C72E2C60DDD100B758DD /* HueInTimerActivityExtension */,
+				630B449C2C6B63B200441DA3 /* LiveIntents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630B449B2C6B63B200441DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6333C72D2C60DDD100B758DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6333C7702C60E48000B758DD /* Pretendard-ExtraLight.otf in Resources */,
+				6333C76E2C60E48000B758DD /* Pretendard-Bold.otf in Resources */,
+				63CC378F2C60F62C00AE51AC /* Assets.xcassets in Resources */,
+				6333C7722C60E48000B758DD /* Pretendard-Medium.otf in Resources */,
+				6333C73D2C60DDD300B758DD /* Assets.xcassets in Resources */,
+				6333C7712C60E48000B758DD /* Pretendard-Light.otf in Resources */,
+				63CC37972C61120A00AE51AC /* Montserrat-SemiBold.ttf in Resources */,
+				6333C76D2C60E48000B758DD /* Pretendard-Black.otf in Resources */,
+				6333C7752C60E48000B758DD /* Pretendard-Thin.otf in Resources */,
+				6333C7732C60E48000B758DD /* Pretendard-Regular.otf in Resources */,
+				6333C76F2C60E48000B758DD /* Pretendard-ExtraBold.otf in Resources */,
+				6333C7742C60E48000B758DD /* Pretendard-SemiBold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D0CA772C5A6D080074E687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E6AADD2C69C94400ED2A2A /* destress_L.mp3 in Resources */,
+				6327F80A2C5B5CB4007F64F2 /* BeHappy.json in Resources */,
+				6327F80C2C5B5CB4007F64F2 /* Confidence.json in Resources */,
+				63E6AAE12C69C94400ED2A2A /* behappy_L.mp3 in Resources */,
+				63D0CA842C5A6D090074E687 /* Preview Assets.xcassets in Resources */,
+				63E6AAE22C69C94400ED2A2A /* setting_R.mp3 in Resources */,
+				6327F80B2C5B5CB4007F64F2 /* Concentrate.json in Resources */,
+				63F4171E2C61AE83000EDCF7 /* Breath.json in Resources */,
+				63E6AADB2C69C94400ED2A2A /* feelfree_L.mp3 in Resources */,
+				63E6AADE2C69C94400ED2A2A /* feelfree_R.mp3 in Resources */,
+				63CC37A82C61348200AE51AC /* Loading.json in Resources */,
+				63E6AADC2C69C94400ED2A2A /* setting_L.mp3 in Resources */,
+				63CC37932C60FC4B00AE51AC /* Splash.json in Resources */,
+				63E6AAE32C69C94400ED2A2A /* behappy_R.mp3 in Resources */,
+				63CC37912C60F70B00AE51AC /* Launch Screen.storyboard in Resources */,
+				63E6AAE02C69C94400ED2A2A /* confidence_R.mp3 in Resources */,
+				63377A412C61C3ED00F7C841 /* feelFree.json in Resources */,
+				63E6AAD82C69C94400ED2A2A /* concentrate_R.mp3 in Resources */,
+				6327F80D2C5B5CB4007F64F2 /* Destress.json in Resources */,
+				63CC379C2C612F2B00AE51AC /* GoogleService-Info.plist in Resources */,
+				63E6AADF2C69C94400ED2A2A /* concentrate_L.mp3 in Resources */,
+				63E6AADA2C69C94400ED2A2A /* destress_R.mp3 in Resources */,
+				63D0CA812C5A6D090074E687 /* Assets.xcassets in Resources */,
+				63E6AAD92C69C94400ED2A2A /* confidence_L.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63CC37A62C61329200AE51AC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630B44992C6B63B200441DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630B44AA2C6B63EA00441DA3 /* StopMediIntent.swift in Sources */,
+				630B44A22C6B63B200441DA3 /* IntentHandler.swift in Sources */,
+				630B44AB2C6B63EC00441DA3 /* AppIntentManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6333C72B2C60DDD100B758DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6333C74C2C60E22D00B758DD /* MediItem.swift in Sources */,
+				6333C7372C60DDD200B758DD /* HueInTimerActivityBundle.swift in Sources */,
+				6333C7482C60DFB300B758DD /* MediAttributes.swift in Sources */,
+				63CC37992C6114F900AE51AC /* ColorExtension.swift in Sources */,
+				630B448F2C6B62E300441DA3 /* HueInTimerActivityLiveActivity.swift in Sources */,
+				630B44982C6B638A00441DA3 /* TimerText.swift in Sources */,
+				630B44902C6B62E600441DA3 /* HueInTriggerBtn.swift in Sources */,
+				630B44962C6B630800441DA3 /* StopMediIntent.swift in Sources */,
+				630B44972C6B630B00441DA3 /* AppIntentManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D0CA752C5A6D080074E687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6333C7472C60DF0900B758DD /* MediAttributes.swift in Sources */,
+				63D0CAA82C5A7A6B0074E687 /* OnboardSettingSpatial.swift in Sources */,
+				63F6FCE52C5BAC9800AEB656 /* LottieView.swift in Sources */,
+				63D0CAA02C5A72D70074E687 /* OnboardingView.swift in Sources */,
+				63456E962C5C75F7004948D5 /* SettingMediItemView.swift in Sources */,
+				63456EBD2C5D1C94004948D5 /* ModeAudioView.swift in Sources */,
+				63F6FCD82C5B6E4A00AEB656 /* BeforePlayBackground.swift in Sources */,
+				63F6FCEB2C5BBF9700AEB656 /* FinishMediAnalysisView.swift in Sources */,
+				63CC37AA2C61354700AE51AC /* LoadingView.swift in Sources */,
+				63456E9E2C5CD69D004948D5 /* SpatialAudioSettingView.swift in Sources */,
+				63CC16462C6213ED0073C68D /* (null) in Sources */,
+				6327F7F12C5B1A73007F64F2 /* Labels.swift in Sources */,
+				6333C7792C60E8BD00B758DD /* LiveActivityEnvironment.swift in Sources */,
+				630B44952C6B630500441DA3 /* StopMediIntent.swift in Sources */,
+				6356CBF82C5FC22E00F0F434 /* ConnectAppleHealth.swift in Sources */,
+				6327F7F52C5B2280007F64F2 /* NavigationEnvironment.swift in Sources */,
+				6327F7F72C5B23A2007F64F2 /* HueStorageEnvironment.swift in Sources */,
+				630B44B02C6B647E00441DA3 /* PlayingLoadingView.swift in Sources */,
+				63F6FCDC2C5B6E8C00AEB656 /* BeforePlayPlayItem.swift in Sources */,
+				63D0CAA42C5A73090074E687 /* OnboardShareCar.swift in Sources */,
+				63456EA32C5CF21A004948D5 /* SpatialEnvironmentImpl.swift in Sources */,
+				6327F7F92C5B2473007F64F2 /* MediItem.swift in Sources */,
+				63456EC02C5D1CC8004948D5 /* SpatialAudioVM.swift in Sources */,
+				63456EC32C5D1CE8004948D5 /* InfoView.swift in Sources */,
+				63F6FCED2C5BBFBA00AEB656 /* FinishExplainView.swift in Sources */,
+				63456E982C5CD625004948D5 /* SettingListView.swift in Sources */,
+				630B44932C6B62FE00441DA3 /* AppIntentManager.swift in Sources */,
+				6356CBFE2C5FF05600F0F434 /* StoreKitImpl.swift in Sources */,
+				63F6FCE82C5BAEF400AEB656 /* FinishView.swift in Sources */,
+				6327F7FB2C5B3026007F64F2 /* SettingView.swift in Sources */,
+				63F6FCF62C5BE0E200AEB656 /* MediChartUseCases.swift in Sources */,
+				63D0CAA62C5A76970074E687 /* OnboardBinaural.swift in Sources */,
+				63D0CAA22C5A72EE0074E687 /* OnboardHelpInfo.swift in Sources */,
+				6333C77B2C60E8E000B758DD /* LiveActivityClient.swift in Sources */,
+				63CC37952C61060E00AE51AC /* SwiftExtensions.swift in Sources */,
+				6356CBFC2C5FE9F900F0F434 /* SettingPlusView.swift in Sources */,
+				63F6FCF32C5BDDD300AEB656 /* MediChartItem.swift in Sources */,
+				63F6FCDA2C5B6E6B00AEB656 /* BeforePlayExplain.swift in Sources */,
+				63456EBB2C5D0DD1004948D5 /* CoreGraphicsExtension.swift in Sources */,
+				63D0CA7D2C5A6D080074E687 /* HueInApp.swift in Sources */,
+				63F6FCEF2C5BC02000AEB656 /* FinishHealthRecordView.swift in Sources */,
+				63F6FCF12C5BDD4000AEB656 /* RecordChardView.swift in Sources */,
+				63CC16482C6215FB0073C68D /* HealthUnAvailabeView.swift in Sources */,
+				63456E942C5C6FE2004948D5 /* SettingHealthSelectionView.swift in Sources */,
+				6356CC002C6052FD00F0F434 /* StoreEnvironment.swift in Sources */,
+				63456E9A2C5CD645004948D5 /* SettingNavigationView.swift in Sources */,
+				6327F7F32C5B2108007F64F2 /* ListView.swift in Sources */,
+				630B44B12C6B647E00441DA3 /* PlayingView.swift in Sources */,
+				630B44AF2C6B647E00441DA3 /* PlayingGraphicView.swift in Sources */,
+				63456EA02C5CEFD4004948D5 /* SpatialEnvironment.swift in Sources */,
+				63BC421D2C63022D006B452F /* ListCardView.swift in Sources */,
+				6327F8032C5B586E007F64F2 /* BeforePlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630B44A52C6B63B200441DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630B449C2C6B63B200441DA3 /* LiveIntents */;
+			targetProxy = 630B44A42C6B63B200441DA3 /* PBXContainerItemProxy */;
+		};
+		6333C7402C60DDD300B758DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6333C72E2C60DDD100B758DD /* HueInTimerActivityExtension */;
+			targetProxy = 6333C73F2C60DDD300B758DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		630B44A82C6B63B200441DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W9F68ZTUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arpple.tistory.HueIn.LiveIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		630B44A92C6B63B200441DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W9F68ZTUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arpple.tistory.HueIn.LiveIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6333C7432C60DDD300B758DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W9F68ZTUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HueInTimerActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HueInTimerActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arpple.tistory.HueIn.HueInTimerActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6333C7442C60DDD300B758DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3W9F68ZTUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HueInTimerActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HueInTimerActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arpple.tistory.HueIn.HueInTimerActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63D0CA852C5A6D090074E687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63D0CA862C5A6D090074E687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63D0CA882C5A6D090074E687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = HueIn/HueIn.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"HueIn/Preview Content\"";
+				DEVELOPMENT_TEAM = 3W9F68ZTUJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HueIn/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Hue-in will save the duration of each session as Mindful Minutes in Apple Health";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hue-in will save the duration of each session as Mindful Minutes in Apple Health";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Hue-in will save the duration of each session as Mindful Minutes in Apple Health";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arpple.tistory.HueIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		63D0CA892C5A6D090074E687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = HueIn/HueIn.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HueIn/Preview Content\"";
+				DEVELOPMENT_TEAM = 3W9F68ZTUJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HueIn/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Hue-in will save the duration of each session as Mindful Minutes in Apple Health";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hue-in will save the duration of each session as Mindful Minutes in Apple Health";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Hue-in will save the duration of each session as Mindful Minutes in Apple Health";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arpple.tistory.HueIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630B44A72C6B63B200441DA3 /* Build configuration list for PBXNativeTarget "LiveIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630B44A82C6B63B200441DA3 /* Debug */,
+				630B44A92C6B63B200441DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6333C7452C60DDD300B758DD /* Build configuration list for PBXNativeTarget "HueInTimerActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6333C7432C60DDD300B758DD /* Debug */,
+				6333C7442C60DDD300B758DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63D0CA742C5A6D080074E687 /* Build configuration list for PBXProject "HueIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D0CA852C5A6D090074E687 /* Debug */,
+				63D0CA862C5A6D090074E687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63D0CA872C5A6D090074E687 /* Build configuration list for PBXNativeTarget "HueIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D0CA882C5A6D090074E687 /* Debug */,
+				63D0CA892C5A6D090074E687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		63D0CA992C5A6FF80074E687 /* XCLocalSwiftPackageReference "../Health_Remind" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Health_Remind;
+		};
+		63D0CAA92C5AAD3D0074E687 /* XCLocalSwiftPackageReference "../HueDesign" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../HueDesign;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63CC379D2C612F8200AE51AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		63D0CA8E2C5A6F860074E687 /* XCRemoteSwiftPackageReference "GreemSwiftPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TaeYoon17/GreemSwiftPackage.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		63F6FCE02C5BAC7600AEB656 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63CC379E2C612F8200AE51AC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63CC379D2C612F8200AE51AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		63CC37A02C612F8200AE51AC /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63CC379D2C612F8200AE51AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		63CC37A22C612F8200AE51AC /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63CC379D2C612F8200AE51AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		63CC37A42C612F8200AE51AC /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63CC379D2C612F8200AE51AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		63D0CA8F2C5A6F860074E687 /* GreemSwiftPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63D0CA8E2C5A6F860074E687 /* XCRemoteSwiftPackageReference "GreemSwiftPackage" */;
+			productName = GreemSwiftPackage;
+		};
+		63D0CA922C5A6FBA0074E687 /* Health_Remind */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Health_Remind;
+		};
+		63D0CA952C5A6FD90074E687 /* HueDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HueDesignSystem;
+		};
+		63D0CA972C5A6FD90074E687 /* HueViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HueViews;
+		};
+		63D0CA9A2C5A6FF80074E687 /* Health_Remind */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Health_Remind;
+		};
+		63D0CAAA2C5AAD3D0074E687 /* HueDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HueDesignSystem;
+		};
+		63D0CAAC2C5AAD3D0074E687 /* HueViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HueViews;
+		};
+		63F6FCE12C5BAC7600AEB656 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63F6FCE02C5BAC7600AEB656 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 63D0CA712C5A6D080074E687 /* Project object */;
+}
