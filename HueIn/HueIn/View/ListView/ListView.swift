@@ -14,6 +14,7 @@ struct ListView: View {
     @Environment(\.navigationControllerState) var naviState
     @Environment(\.hueStorage) var hueStorage
     @Environment(\.store) var store
+    @Environment(\.spatialAudio) var spatials
     @State private var values:[MediItem] = []
     @State var paths: [StackViewType] = []
     @State private var isPro = false
@@ -62,12 +63,12 @@ struct ListView: View {
                         self.values = Medi.allCases.compactMap{[mediItems = hueStorage.mediItems] item in
                             mediItems[item]
                         }
+                        Task{ try? await spatials.soundStop() }
                         Task{
                             try await store.loadProducts()
                             await store.updatePurchasedProducts()
                             await MainActor.run { 
                                 self.isPro = store.isProUser
-                                print(isPro)
                             }
                             for await purchaseEvent in await store.eventAsyncStream(){
                                 switch purchaseEvent{

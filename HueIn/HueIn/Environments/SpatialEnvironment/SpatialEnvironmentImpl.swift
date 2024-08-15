@@ -79,21 +79,20 @@ final class SpatialStateImpl: NSObject, SpatialState{
     }
     /// UserDefaults로 가져온 각각 소리의 위치에 맞게 설정 후 재생한다.
     func settingStart() async throws{
-            clearNodes()
-            if leftSettingSoundNode == nil && rightSettingSoundNode == nil{
-                
-                leftSettingSoundNode = self.getNode(file: "setting_L",withExtension: "mp3", atPosition: AVAudio3DPoint(x: 0, y: 0, z: 0))
-                rightSettingSoundNode = self.getNode(file: "setting_R", withExtension: "mp3", atPosition: .init(x: 0, y: 0, z: 0))
-            }
-            let position = getNodePosition()
-            setNodePosition(sideType: .left, position: position.left)
-            setNodePosition(sideType: .right, position: position.right)
-            try! engine.start()
-            leftSettingSoundNode.play()
-            rightSettingSoundNode.play()
-            try await Task.sleep(nanoseconds: 1000)
-            leftSettingSoundNode.volume = 1
-            rightSettingSoundNode.volume = 1
+        clearNodes()
+        if leftSettingSoundNode == nil || rightSettingSoundNode == nil {
+            leftSettingSoundNode = getNode(file: "setting_L",withExtension: "mp3", atPosition: AVAudio3DPoint(x: 0, y: 0, z: 0))
+            rightSettingSoundNode = getNode(file: "setting_R", withExtension: "mp3", atPosition: AVAudio3DPoint(x: 0, y: 0, z: 0))
+        }
+        let position = getNodePosition()
+        setNodePosition(sideType: .left, position: position.left)
+        setNodePosition(sideType: .right, position: position.right)
+        if !engine.isRunning { try! engine.start() }
+        leftSettingSoundNode.play()
+        rightSettingSoundNode.play()
+        try await Task.sleep(nanoseconds: 1000)
+        leftSettingSoundNode.volume = 1
+        rightSettingSoundNode.volume = 1
         
     }
     func settingResume() async throws{
@@ -153,7 +152,7 @@ final class SpatialStateImpl: NSObject, SpatialState{
     
     @SpatialActor func soundReady(leftPath:String, rightPath:String, format: String = "mp3") async throws{
         clearNodes()
-        if leftSoundNode == nil && rightSoundNode == nil{
+        if leftSoundNode == nil || rightSoundNode == nil{
             leftSoundNode = self.getNode(file: leftPath,withExtension: format, atPosition: AVAudio3DPoint(x: 0, y: 0, z: 0))
             rightSoundNode = self.getNode(file: rightPath, withExtension: format, atPosition: .init(x: 0, y: 0, z: 0))
         }
@@ -173,15 +172,14 @@ final class SpatialStateImpl: NSObject, SpatialState{
     }
     
     @SpatialActor func soundStart(leftPath: String,rightPath:String, format: String = "mp3") async throws{
-        if leftSoundNode == nil && rightSoundNode == nil{
+        if leftSoundNode == nil || rightSoundNode == nil{
             leftSoundNode = self.getNode(file: leftPath,withExtension: format, atPosition: AVAudio3DPoint(x: 0, y: 0, z: 0))
             rightSoundNode = self.getNode(file: rightPath, withExtension: format, atPosition: .init(x: 0, y: 0, z: 0))
             let position = getNodePosition()
             leftSoundNode.set2DPosition(position.left)
             rightSoundNode.set2DPosition(position.right)
         }
-        
-        try! engine.start()
+        if !engine.isRunning{ try! engine.start() }
         leftSoundNode.play()
         rightSoundNode.play()
         try await Task.sleep(nanoseconds: 100)

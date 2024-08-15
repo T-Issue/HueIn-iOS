@@ -18,11 +18,11 @@ struct PlayingView:View {
     @Environment(\.health) var health
     let mediItem: MediItem
     let playTime: Int
-    @State var nowTime = 0
-    @State private var isFinished:Bool = false
-    @Binding var paths:[StackViewType]
-    @State private var startDate = Date()
-    @State private var isStarted = false
+    @State var nowTime: Int = 0
+    @State private var isFinished: Bool = false
+    @Binding var paths: [StackViewType]
+    @State private var startDate: Date = Date()
+    @State private var isStarted: Bool = false
     var body: some View {
         ZStack{
             setLiveActivity
