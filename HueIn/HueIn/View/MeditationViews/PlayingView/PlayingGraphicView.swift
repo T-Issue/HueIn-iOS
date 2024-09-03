@@ -12,7 +12,8 @@ struct PlayingGraphicView: View {
     @Binding var nowTime:Int
     var body: some View {
         Rectangle().fill().overlay {
-            Image(.onboardBg).resizable().scaledToFill()
+//            Image(.onboardBg).resizable().scaledToFill()
+            Rectangle().fill(.black)
         }.overlay{
             LottieView(fileName: mediItem.paths.playingGraphic, loopMode: .loop)
         }

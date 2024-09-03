@@ -36,11 +36,9 @@ struct HueInApp: App {
                         if !isOnboard{
                             OnboardingView(onboard: $isOnboard)
                         }else{
-                            ListView().onAppear{
-                                
-                            }
+                            ListView()
                         }
-                    }.animation(.linear(duration: 0.5), value: isOnboard)
+                    }
                 }
             }.animation(.linear(duration: 0.5), value: isSplash)
             .onAppear {

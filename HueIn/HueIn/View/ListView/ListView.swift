@@ -51,13 +51,13 @@ struct ListView: View {
                                     }
                                 }else{
                                     CardView (item: value,isLocked: true){
-                                        promotionPresent.toggle()
+                                        promotionPresent = true
                                     }
                                 }
                             }
-                        }.fullScreenCover(isPresented: $promotionPresent) {
-                            SettingSubscriptionView()
                         }
+                    }.fullScreenCover(isPresented: $promotionPresent) {
+                        SettingSubscriptionView()
                     }
                     .onAppear(){
                         self.values = Medi.allCases.compactMap{[mediItems = hueStorage.mediItems] item in

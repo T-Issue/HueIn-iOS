@@ -15,6 +15,7 @@ struct ConnectAppleHealth: View {
     @Environment(\.health) var health
     @State private var chartItems:[MediChartItem] = []
     @State private var isHeathToggle:Bool = false
+    @State private var isLoading:Bool = true
     var body: some View {
         ZStack{
             Rectangle().fill().overlay {
@@ -23,7 +24,11 @@ struct ConnectAppleHealth: View {
             VStack(spacing: 0) {
                 SettingView.SettingNavigationView().padding([.horizontal,.bottom],16)
                 if isHeathToggle{
-                    healthAvailableView
+                    if isLoading{
+                        LoadingView()
+                    }else{
+                        healthAvailableView
+                    }
                 }else{
                     HealthUnAvailabeView().padding(.horizontal,16)
                 }
@@ -37,11 +42,13 @@ struct ConnectAppleHealth: View {
                 } shown: {
                     self.isHeathToggle = health.haveAuthorization()
                 }
+                isLoading = true
                 Task{
                     do{
                         let chartItems = try await MediChartItem.getLast7DaysItems(health: health)
                         await MainActor.run {
                             self.chartItems = chartItems
+                            self.isLoading = false
                         }
                     }catch{
                         print("Setting Health Error \(error)")
@@ -55,11 +62,13 @@ struct ConnectAppleHealth: View {
                     } shown: {
                         self.isHeathToggle = health.haveAuthorization()
                     }
+                    isLoading = true
                     Task{
                         do{
                             let chartItems = try await MediChartItem.getLast7DaysItems(health: health)
                             await MainActor.run {
                                 self.chartItems = chartItems
+                                isLoading = false
                             }
                         }catch{
                             print("Setting Health Error \(error)")

@@ -19,7 +19,7 @@ extension Date{
 extension Int{
     func convertToHMS()->String{
         if self < 60{
-            "\(self)h"
+            "\(self)s"
         }else if self < 3600{
             "\(self / 60)m \(self % 60)s"
         }else{

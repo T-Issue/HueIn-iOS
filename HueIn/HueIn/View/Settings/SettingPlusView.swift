@@ -15,6 +15,7 @@ struct SettingSubscriptionView: View {
     @Environment(\.dismiss) var dismiss
     @State private var displayPrice : String = ""
     @State private var isLoading = false
+    @State private var loadingFailed = false
     var body: some View {
         ZStack(content: {
             Rectangle().fill().overlay {
@@ -67,8 +68,21 @@ struct SettingSubscriptionView: View {
             
             })
         })
+        .alert("Please try again", isPresented: $loadingFailed, actions: {
+            Button(role: .cancel) {
+                dismiss()
+            } label: {
+                Text("Close")
+            }
+        })
         .onAppear(){
             isLoading = true
+            Task{
+                try await Task.sleep(for: .seconds(3))
+                if isLoading{
+                    await MainActor.run { loadingFailed = true }
+                }
+            }
             Task{
                 try await store.loadProducts()
                 await store.updatePurchasedProducts()
